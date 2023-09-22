@@ -1,5 +1,5 @@
 # 
-# Lista de tareas ( Todo App | Backend )
+# Lista de tareas - Backend
 
 Este es el servidor backend de la aplicación de tareas. Asegúrate de seguir los pasos a continuación para configurar y ejecutar correctamente el servidor.
 
