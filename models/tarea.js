@@ -21,6 +21,7 @@ const TareaSchema = new Schema({
     type: String,
     required: true,
     enum: ["pendiente", "completada"],
+    default: "pendiente",
   },
 });
 

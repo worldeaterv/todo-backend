@@ -3,10 +3,11 @@ const { check } = require("express-validator");
 
 const {
   getTareas,
-  putTarea,
+  getTareaById,
   postTarea,
   deleteTarea,
-  patchTarea,
+  deleteAllTasksCompleted,
+  actualizarTareaById,
   estadoTarea,
 } = require("../controllers/tareas.controller");
 const {
@@ -18,8 +19,15 @@ const { validarCampos } = require("../middlewares/validar-campos");
 const router = Router();
 
 router.get("/mis-tareas", getTareas);
-
-router.put("/:id", putTarea);
+router.get(
+  "/tarea/:id",
+  [
+    check("id", "No es un ID válido").isMongoId(),
+    check("id").custom(existeTareaPorId),
+    validarCampos,
+  ],
+  getTareaById
+);
 
 router.post(
   "/crear-tarea",
@@ -42,14 +50,16 @@ router.delete(
   deleteTarea
 );
 
+router.delete("/borrar-tareas-completadas", deleteAllTasksCompleted);
+
 router.patch(
-  "/actualizar-tarea/:id",
+  "/editar-tarea/:id",
   [
     check("id", "No es un ID válido").isMongoId(),
     check("id").custom(existeTareaPorId),
     validarCampos,
   ],
-  patchTarea
+  actualizarTareaById
 );
 
 router.patch(
