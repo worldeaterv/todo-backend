@@ -7,9 +7,9 @@ Este es el servidor backend de la aplicación de tareas. Asegúrate de seguir lo
 
 Este servidor backend ha sido desarrollado utilizando las siguientes tecnologías:
 
-- **Node.js.
-- **Express.
-- **Mongoose.
+- **Node.js**.
+- **Express**.
+- **Mongoose**.
 
 ## Configuración del Archivo .env
 
