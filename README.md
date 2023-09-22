@@ -3,6 +3,14 @@
 
 Este es el servidor backend de la aplicación de tareas. Asegúrate de seguir los pasos a continuación para configurar y ejecutar correctamente el servidor.
 
+## Tecnologías Utilizadas
+
+Este servidor backend ha sido desarrollado utilizando las siguientes tecnologías:
+
+- **Node.js.
+- **Express.
+- **Mongoose.
+
 ## Configuración del Archivo .env
 
 Antes de ejecutar el servidor backend, asegúrate de crear un archivo `.env` en la raíz del directorio del backend con las siguientes variables de entorno:
