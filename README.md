@@ -1,6 +1,20 @@
-# Lista de tareas ( Todo App )
+# 
+# Lista de tareas ( Todo App | Backend )
 
+Este es el servidor backend de la aplicación de tareas. Asegúrate de seguir los pasos a continuación para configurar y ejecutar correctamente el servidor.
 
-1. Ejecuta ```npm install``` para reconstruir los módulos de Node.
+## Configuración del Archivo .env
 
-2. Levanta el servidor con el comando ```node .\app.js```.
+Antes de ejecutar el servidor backend, asegúrate de crear un archivo `.env` en la raíz del directorio del backend con las siguientes variables de entorno:
+
+- `PORT`: El puerto en el que deseas ejecutar el servidor (por ejemplo, 8030).
+- `MONGODB_CNN`: La cadena de conexión a tu base de datos MongoDB.
+
+Asegúrate de definir estas variables de entorno en el archivo `.env` antes de ejecutar el servidor.
+
+## Instalación de Dependencias
+
+Antes de ejecutar el servidor backend, asegúrate de instalar todas las dependencias. Abre una terminal en la carpeta raíz del backend y ejecuta el siguiente comando:
+
+```bash
+npm install
